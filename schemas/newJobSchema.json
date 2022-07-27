@@ -1,0 +1,53 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "title",
+        "salary",
+        "equity",
+        "company_handle"
+    ],
+    "properties": {
+        "title": {
+            "type": "string",
+            "default": "",
+            "title": "The title Schema",
+            "examples": [
+                "Executive Assistant"
+            ]
+        },
+        "salary": {
+            "type": "integer",
+            "default": 0,
+            "title": "The salary Schema",
+            "examples": [
+                75000
+            ]
+        },
+        "equity": {
+            "type": "number",
+            "default": 0.0,
+            "title": "The equity Schema",
+            "examples": [
+                0.12
+            ]
+        },
+        "company_handle": {
+            "type": "string",
+            "default": "",
+            "title": "The company_handle Schema",
+            "examples": [
+                "bauer-gallagher"
+            ]
+        }
+    },
+    "examples": [{
+        "title": "Executive Assistant",
+        "salary": 75000,
+        "equity": 0.12,
+        "company_handle": "bauer-gallagher"
+    }]
+}
